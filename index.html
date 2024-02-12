@@ -3,7 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="bg-sky-200 max-w-[1440px] mx-auto flex justify-between px-8 py-4"
+    >
+      <div>
+        <h1 class="font-bold text-3xl">Interactive</h1>
+        <p>Geometry Genius</p>
+      </div>
+      <div><button class="btn bg-blue-950 text-white">Blog</button></div>
+    </header>
+
+    <div class="container">
+      <div class="cards">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Triangle</h2>
+            <p>Area (A) = .5 X b X h</p>
+            <div class="input-sec">
+              <input
+                type="text"
+                id="input-base"
+                placeholder="base"
+                class="w-24 px-1 mx-2"
+              />
+              cm
+              <input
+                type="text"
+                placeholder="hieght"
+                id="input-height"
+                class="w-24 px-1 mx-2"
+              />
+              cm
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calculation"></div>
+    </div>
+  </body>
 </html>
